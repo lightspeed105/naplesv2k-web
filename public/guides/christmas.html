@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Ultimate Naples Holiday Guide | Vikki Salese | NaplesV2K</title>
+  <meta name="description" content="Vikki Salese's free 2026 guide to the holidays in Naples, Florida: tree lightings, the boat parade, snowfall on Third Street, holiday lights, performances, and where to eat.">
+  <meta name="theme-color" content="#0A2470">
+
+  <meta property="og:title" content="The Ultimate Naples, Florida Holiday Guide">
+  <meta property="og:description" content="Free from Vikki Salese: tree lightings, the boat parade, snowfall on Third Street, holiday lights, and where to eat this season.">
+  <meta property="og:image" content="https://naplesv2k.com/images/og-christmas.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="The Ultimate Naples, Florida Holiday Guide, with palm trees wrapped in lights">
+  <meta property="og:url" content="https://naplesv2k.com/guides/christmas">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://naplesv2k.com/images/og-christmas.jpg">
+  <link rel="canonical" href="https://naplesv2k.com/guides/christmas">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --night: #0C2C84;
+      --night-deep: #06174A;
+      --gold: #E2B450;
+      --gold-deep: #B8862B;
+      --cream: #FBF6EC;
+      --cream-soft: rgba(251, 246, 236, 0.8);
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 300;
+      color: var(--cream);
+      background: var(--night-deep);
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* Night sky, with a scatter of warm string-light dots */
+    .page {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1.25rem 2.5rem;
+      position: relative;
+      background: radial-gradient(120% 90% at 50% 0%, var(--night) 0%, var(--night-deep) 78%);
+    }
+    .lights {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background-image:
+        radial-gradient(circle, rgba(226,180,80,0.9) 0 1.5px, transparent 2.5px),
+        radial-gradient(circle, rgba(255,236,190,0.8) 0 1px, transparent 2px),
+        radial-gradient(circle, rgba(226,180,80,0.6) 0 2px, transparent 3.5px);
+      background-size: 190px 170px, 130px 210px, 310px 260px;
+      background-position: 20px 30px, 70px 110px, 150px 60px;
+      opacity: 0.5;
+      animation: twinkle 5s ease-in-out infinite alternate;
+    }
+    @keyframes twinkle { from { opacity: 0.28; } to { opacity: 0.6; } }
+
+    .guide {
+      position: relative;
+      width: 100%;
+      max-width: 880px;
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-items: center;
+      gap: 1.75rem;
+      text-align: center;
+    }
+
+    .brand {
+      grid-column: 1 / -1;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 0.85rem;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--gold);
+      animation: rise 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+    }
+
+    /* The cover, presented as the printed guide */
+    .cover {
+      display: block;
+      width: min(62vw, 290px);
+      border-radius: 4px;
+      outline: 1px solid rgba(226,180,80,0.65);
+      outline-offset: 5px;
+      box-shadow: 0 24px 50px rgba(0,0,0,0.5), 0 2px 6px rgba(0,0,0,0.35);
+      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      animation: rise 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.1s both;
+    }
+    .cover img { display: block; width: 100%; height: auto; border-radius: 4px; }
+    .cover:hover { transform: translateY(-4px); }
+
+    .copy { max-width: 26rem; animation: rise 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.25s both; }
+    .eyebrow {
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.8rem;
+    }
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.15rem;
+      font-weight: 600;
+      line-height: 1.1;
+      margin-bottom: 0.9rem;
+      text-wrap: balance;
+    }
+    .subtitle { font-size: 1rem; line-height: 1.6; color: var(--cream-soft); margin-bottom: 1.6rem; }
+
+    .download-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      background: linear-gradient(135deg, #EFCB74, var(--gold) 55%, var(--gold-deep));
+      color: var(--night-deep);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      padding: 1rem 2.25rem;
+      border-radius: 60px;
+      box-shadow: 0 6px 22px rgba(226,180,80,0.3);
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s;
+    }
+    .download-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(226,180,80,0.45); }
+    .download-btn:active { transform: translateY(0); }
+    .download-btn:focus-visible, .cover:focus-visible, .footer-note a:focus-visible { outline: 2px solid var(--cream); outline-offset: 4px; }
+    .download-btn svg { width: 18px; height: 18px; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+
+    .meta { margin-top: 0.9rem; font-size: 0.8rem; color: rgba(251,246,236,0.6); }
+    .footer-note { margin-top: 1.6rem; font-size: 0.85rem; color: var(--cream-soft); }
+    .footer-note a { color: var(--gold); text-decoration: none; }
+    .footer-note a:hover { text-decoration: underline; }
+
+    @keyframes rise { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+
+    @media (min-width: 760px) {
+      .page { padding: 3rem 2.5rem; }
+      .guide { grid-template-columns: auto 1fr; align-items: center; justify-items: start; column-gap: 4rem; row-gap: 2.25rem; text-align: left; }
+      .brand { justify-self: start; }
+      .cover { width: 340px; }
+      h1 { font-size: 3rem; }
+      .subtitle { font-size: 1.05rem; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .lights, .brand, .cover, .copy { animation: none; }
+      .cover, .download-btn { transition: none; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <div class="lights" aria-hidden="true"></div>
+    <div class="guide">
+      <div class="brand">NaplesV2K</div>
+
+      <a class="cover" href="/files/naples-holiday-guide-2026.pdf" download aria-label="Download the Naples Holiday Guide (PDF)">
+        <img src="/images/christmas-cover.jpg" width="1100" height="1423" alt="Cover of The Ultimate Naples, Florida Holiday Guide by Vikki Salese: two palm trees wrapped in lights against a blue evening sky">
+      </a>
+
+      <div class="copy">
+        <p class="eyebrow">Free guide &middot; 2026 season</p>
+        <h1>The Ultimate Naples Holiday Guide</h1>
+        <p class="subtitle">My holiday bucket list for Naples: tree lightings, the boat parade, snowfall on Third Street, the best light displays, holiday performances, photos with Santa, and where to go for date night and festive meals.</p>
+
+        <a href="/files/naples-holiday-guide-2026.pdf" class="download-btn" download>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download Free Guide
+        </a>
+        <p class="meta">PDF &middot; 12 pages</p>
+
+        <p class="footer-note">By <a href="https://www.instagram.com/naplesv2k" target="_blank" rel="noopener">Vikki Salese</a> &middot; Naples, FL</p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
